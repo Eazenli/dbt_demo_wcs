@@ -2,11 +2,11 @@ version: 2
 
 sources:
   - name: my_dbt_db
-    database: my_dbt_db
-    schema: my_dbt_db
-
+    schema: null
+    description: E-commerce data 
     tables:
       - name: raw_customers
+        description: One record per person who has purchased one or more items 
       - name: raw_orders 
       - name: raw_stores
 
