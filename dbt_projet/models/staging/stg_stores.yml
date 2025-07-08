@@ -1,13 +1,14 @@
 version: 2
 
 models:
-  - name: stg_customers 
+  - name: stg_stores
     columns:
-      - name: customer_id
+      - name: store_id
         tests:
           - not_null
           - unique
-      - name: customer_name 
+      - name: store_name
         tests:
           - not_null
-      
+      - name: date_open
+      - name: tax_rate 
